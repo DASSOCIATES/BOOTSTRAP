@@ -1,6 +1,7 @@
 {
-	"name" : "Dassociates/Bootstrap",
+	"name" : "dassociates/bootstrap",
 	"require" : {
 		"dassociates/html" : "dev-develop"
-	}
+	},
+	"homepage" : "https://github.com/dassociates/bootstrap"
 }
