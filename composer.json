@@ -1,7 +1,19 @@
 {
 	"name" : "dassociates/bootstrap",
 	"require" : {
-		"dassociates/html" : "dev-develop"
+		"dassociates/html" : "dev-develop",
+		"laminas/laminas-form" : "~3.19"
 	},
-	"homepage" : "https://github.com/dassociates/bootstrap"
+	"homepage" : "https://github.com/dassociates/bootstrap",
+	"autoload" : {
+		"psr-4" : {
+			"Dassociates\\Bootstrap\\" : "src/"
+		}
+	},
+	"extra": {
+        "laminas": {
+            "component": "Laminas\\Form",
+            "config-provider": "Laminas\\Form\\ConfigProvider"
+        }
+    }
 }
