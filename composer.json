@@ -1,0 +1,6 @@
+{
+	"name" : "Dassociates/Bootstrap",
+	"require" : {
+		"dassociates/html" : "dev-develop"
+	}
+}
