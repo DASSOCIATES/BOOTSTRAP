@@ -9,13 +9,13 @@
 	"homepage" : "https://github.com/dassociates/bootstrap",
 	"autoload" : {
 		"psr-4" : {
-			"Dassociates\\Bootstrap\\" : "src/"
+			"Dassociates\\Bootstrap\\" : "src"
 		}
 	},
 	"extra" : {
 		"laminas" : {
-			"component" : "Laminas\\Form",
-			"config-provider" : "Laminas\\Form\\ConfigProvider"
+			"component" : "Dassociates\\Bootstrap",
+			"config-provider" : "Dassociates\\Bootstrap\\ConfigProvider"
 		}
 	}
 }
