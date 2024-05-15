@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Dassociates\Bootstrap\;
+namespace Dassociates\Bootstrap;
 
 final class ConfigProvider
 {
