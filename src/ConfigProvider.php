@@ -1,6 +1,4 @@
 <?php
-use Laminas\ServiceManager\Factory\InvokableFactory;
-
 declare(strict_types=1);
 
 namespace Dassociates\Bootstrap\;
@@ -19,13 +17,13 @@ final class ConfigProvider
         return [
             'view_helpers' => [
                 'aliases' => [
-                    'formcheckbox'               => View\Helper\FormCheckbox::class,
-                    'form_checkbox'              => View\Helper\FormCheckbox::class,
-                    'formCheckbox'               => View\Helper\FormCheckbox::class,
-                    'FormCheckbox'               => View\Helper\FormCheckbox::class,
+                    'bsformcheckbox'             => View\Helper\FormCheckbox::class,
+                    'bsform_checkbox'            => View\Helper\FormCheckbox::class,
+                    'bsformCheckbox'             => View\Helper\FormCheckbox::class,
+                    'bsFormCheckbox'             => View\Helper\FormCheckbox::class,
                 ],
                 'factories' => [
-                    View\Helper\FormCheckbox::class     => InvokableFactory::class,
+                    View\Helper\FormCheckbox::class     => View\Helper\Factory\FormCheckboxFactory::class,
                 ],
             ],
         ];

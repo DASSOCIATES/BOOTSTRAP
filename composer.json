@@ -2,7 +2,9 @@
 	"name" : "dassociates/bootstrap",
 	"require" : {
 		"dassociates/html" : "dev-develop",
-		"laminas/laminas-form" : "~3.19"
+		"laminas/laminas-form" : "~3.19",
+		"laminas/laminas-i18n" : "~2.26",
+		"laminas/laminas-view" : "~2.34"
 	},
 	"homepage" : "https://github.com/dassociates/bootstrap",
 	"autoload" : {
@@ -10,10 +12,10 @@
 			"Dassociates\\Bootstrap\\" : "src/"
 		}
 	},
-	"extra": {
-        "laminas": {
-            "component": "Laminas\\Form",
-            "config-provider": "Laminas\\Form\\ConfigProvider"
-        }
-    }
+	"extra" : {
+		"laminas" : {
+			"component" : "Laminas\\Form",
+			"config-provider" : "Laminas\\Form\\ConfigProvider"
+		}
+	}
 }

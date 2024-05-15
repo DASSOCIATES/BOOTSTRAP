@@ -7,5 +7,8 @@ use Laminas\Form\View\Helper\FormInput;
 
 class FormCheckbox extends FormInput
 {
+    protected $validTypes = [
+        'bscheckbox' => true,
+    ];
     
 }
