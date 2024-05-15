@@ -6,7 +6,7 @@ namespace Dassociates\Bootstrap\View\Helper\Factory;
 use Laminas\Form\View\Helper\FormElement;
 use Laminas\ServiceManager\Factory\FactoryInterface;
 use Psr\Container\ContainerInterface;
-use Dassociates\Html\View\Helper\FormCheckbox;
+use Dassociates\Bootstrap\View\Helper\FormCheckbox;
 
 class FormCheckboxFactory implements FactoryInterface
 {
@@ -17,7 +17,7 @@ class FormCheckboxFactory implements FactoryInterface
          * @var FormElement $view_helper
          */
         $view_helper = $container->get('ViewHelperManager')->get(FormElement::class);
-        $view_helper->addType('checkbox', FormCheckbox::class);
+        $view_helper->addType('bscheckbox', FormCheckbox::class);
         return null === $options ? new $requestedName() : new $requestedName($options);
     }
 }

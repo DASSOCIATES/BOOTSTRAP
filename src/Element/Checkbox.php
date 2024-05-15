@@ -8,6 +8,11 @@ use Laminas\InputFilter\InputProviderInterface;
 
 class Checkbox extends Element implements InputProviderInterface
 {
+    /** @var array<string, scalar|null>  */
+    protected $attributes = [
+        'type' => 'bscheckbox',
+    ];
+    
     public function getInputSpecification()
     {
         $spec = [
