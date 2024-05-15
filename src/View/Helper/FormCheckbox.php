@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Dassociates\Html\View\Helper;
+namespace Dassociates\Bootstrap\View\Helper;
 
 use Laminas\Form\View\Helper\FormInput;
 
