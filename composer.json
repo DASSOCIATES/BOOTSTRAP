@@ -4,7 +4,8 @@
 		"dassociates/html" : "dev-develop",
 		"laminas/laminas-form" : "~3.19",
 		"laminas/laminas-i18n" : "~2.26",
-		"laminas/laminas-view" : "~2.34"
+		"laminas/laminas-view" : "~2.34",
+		"laminas/laminas-modulemanager" : "~2.15"
 	},
 	"homepage" : "https://github.com/dassociates/bootstrap",
 	"autoload" : {

@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 namespace Dassociates\Bootstrap;
 
+use Laminas\ServiceManager\Factory\InvokableFactory;
+
 final class ConfigProvider
 {
     public function __invoke(): array
@@ -23,7 +25,7 @@ final class ConfigProvider
                     'bsFormCheckbox'             => View\Helper\FormCheckbox::class,
                 ],
                 'factories' => [
-                    View\Helper\FormCheckbox::class     => View\Helper\Factory\FormCheckboxFactory::class,
+                    View\Helper\FormCheckbox::class => InvokableFactory::class,
                 ],
             ],
         ];
